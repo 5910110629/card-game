@@ -17,3 +17,9 @@ body{
   background: #80aaff;
 }
 
+.winner {
+  font-weight: bold;
+  font-size: 50px;
+  color: #e6b800;
+}
+
