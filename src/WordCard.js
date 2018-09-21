@@ -45,7 +45,7 @@ export default class WordCard extends Component {
                 <div class="image">
                     {this.state.completed? <img src="https://res.cloudinary.com/teepublic/image/private/s--YAWYa4dh--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507796176/production/designs/1965861_1.jpg" alt="WINNER" width='450' height='450'/> : ""}
                 </div>
-                <p>{this.state.lose? "You Lose, Reset!!" : ""}</p>
+                <p className = "lose">{this.state.lose? "You Lose, Reset!!" : ""}</p>
 
             </div>
         )

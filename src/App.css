@@ -23,3 +23,9 @@ body{
   color: #e6b800;
 }
 
+.lose {
+  font-weight: bold;
+  font-size: 50px;
+  color: #d1e0e0;
+}
+
