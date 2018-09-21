@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import CharacterCard from "./CharacterCard";
 import _ from 'lodash';
 const prepareStateFromWord = (given_word) => {
