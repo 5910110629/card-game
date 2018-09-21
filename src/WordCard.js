@@ -9,7 +9,8 @@ const prepareStateFromWord = (given_word) => {
         chars,
         attemt: 1,
         guess: [],
-        completed: false
+        completed: false,
+        lose : false
     }
 }
 export default class WordCard extends Component {
@@ -24,7 +25,7 @@ export default class WordCard extends Component {
             if(guess === this.state.word){
                 this.setState({guess: [], completed: true})
             }else{
-                this.setState({guess: [], attemt: this.state.attemt + 1})
+                this.setState({guess: [], attemt: this.state.attemt + 1, lose: true})
             }
         }
     }
@@ -41,10 +42,10 @@ export default class WordCard extends Component {
                 <p>Hint : place in PUBG game</p>
                 <p>Round : {this.state.attemt}</p>
                 <p className = "winner">{this.state.completed? "WINNER WINNER CHICKEN DINNER!!" : ""}</p>
-                
                 <div class="image">
                     {this.state.completed? <img src="https://res.cloudinary.com/teepublic/image/private/s--YAWYa4dh--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507796176/production/designs/1965861_1.jpg" alt="WINNER" width='450' height='450'/> : ""}
                 </div>
+                <p>{this.state.lose? "You Lose, Reset!!" : ""}</p>
 
             </div>
         )
