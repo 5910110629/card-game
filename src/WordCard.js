@@ -43,7 +43,7 @@ export default class WordCard extends Component {
                 <p>Round : {this.state.attemt}</p>
                 <p className = "winner">{this.state.completed? "WINNER WINNER CHICKEN DINNER!!" : ""}</p>
                 <div class="image">
-                    {this.state.completed? <img src="https://res.cloudinary.com/teepublic/image/private/s--YAWYa4dh--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507796176/production/designs/1965861_1.jpg" alt="WINNER" width='450' height='450'/> : ""}
+                    {this.state.completed? <img src="https://res.cloudinary.com/teepublic/image/private/s--YAWYa4dh--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507796176/production/designs/1965861_1.jpg" alt="WINNER" width='400' height='400'/> : ""}
                 </div>
                 <p className = "lose">{this.state.lose? "You Lose, Reset!!" : ""}</p>
                 <div class="image">

@@ -19,7 +19,7 @@ body{
 
 .winner {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 35px;
   color: #e6b800;
 }
 
@@ -27,5 +27,10 @@ body{
   font-weight: bold;
   font-size: 50px;
   color: #d1e0e0;
+}
+
+p {
+  font-weight: bold;
+  font-size: 15px;
 }
 
