@@ -38,6 +38,10 @@ export default class WordCard extends Component {
                         activationHandler = {this.activationHandler}/>
                     )
                 }
+                <p>Hint : place in PUBG game</p>
+                <p>Round : {this.state.attemt}</p>
+                <p>{this.state.completed? "WINNER WINNER CHICKEN DINNER" : ""}</p>
+
             </div>
         )
     }
